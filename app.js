@@ -5,6 +5,7 @@ var button = document.querySelector("#check");
 var dateField = document.querySelector(".bday");
 var luckField = document.querySelector(".luckyNum");
 var outputField = document.querySelector("#successMsg");
+var container = document.querySelector(".aside");
 
 button.addEventListener("click", function () {
   var userDate = dateField.value.toString().replaceAll("-", "");
@@ -14,16 +15,13 @@ button.addEventListener("click", function () {
     datesum = datesum + parseInt(userDate[i]);
   }
   var sum = datesum;
-  console.log("datesum", datesum);
   for (let i = 0; i < luckyNum.length; i++) {
     sum = sum + parseInt(luckyNum[i]);
   }
-  console.log("sum", sum);
+
   if (sum % Number(luckyNum) !== 0) {
-    console.log("in else block");
     outputField.innerText = badluckMsge;
   } else {
-    console.log("in if block");
     outputField.innerText = luckMsg;
   }
 });
