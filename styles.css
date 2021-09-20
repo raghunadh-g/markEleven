@@ -1,0 +1,44 @@
+body {
+  background-image: linear-gradient(to right, #9ca3af, #d1d5db);
+}
+
+.App {
+  font-family: sans-serif;
+  max-width: 70%;
+  float: left;
+  margin: 6rem;
+  /* background-color: red; */
+}
+
+.aside {
+  margin: 12rem 6rem;
+  float: left;
+  /* background-color: yellow; */
+}
+
+label {
+  display: block;
+  margin: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+button {
+  display: block;
+  margin: 2rem 0rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  outline: none;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+input {
+  border-radius: 0.5rem;
+  width: 50%;
+  padding: 1rem;
+  outline: none;
+}
