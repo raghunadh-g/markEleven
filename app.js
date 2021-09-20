@@ -14,12 +14,8 @@ button.addEventListener("click", function () {
   for (let i = 0; i < userDate.length; i++) {
     datesum = datesum + parseInt(userDate[i]);
   }
-  var sum = datesum;
-  for (let i = 0; i < luckyNum.length; i++) {
-    sum = sum + parseInt(luckyNum[i]);
-  }
 
-  if (sum % Number(luckyNum) !== 0) {
+  if (datesum % Number(luckyNum) !== 0) {
     outputField.innerText = badluckMsge;
   } else {
     outputField.innerText = luckMsg;
